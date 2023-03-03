@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add icon online -->
+    <script src="https://kit.fontawesome.com/1ed0a5adb2.js" crossorigin="anonymous"></script>
+    <!-- add for page -->
+    <link rel="icon" type="image/x-icon" href="image/avt_fb.png">
+    <!-- add style css -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>NguyenDuy✔</title>
+
+</head>
+
+<body>
+    <!-- header bar -->
+    <header>
+        <a href="about.html"> <img src="image/avt_fb.png" alt="Logo" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./am_thuc/index.html">Food</a></li>
+            <li><a href="./dia_danh/index.html">View</a></li>
+            <li><a href="about.html">Info</a></li>
+        </ul>
+    </header>
+
+    <!-- Content circle display on body -->
+    <div class="circle"></div>
+
+    <!-- Main -->
+    <main>
+        <!-- Content Food Main -->
+        <div class="main_content">
+            <!-- Content describe food  -->
+            <div class="content_item">
+                <div class="text_box">
+                    <h2>Food in VietNam</h2>
+                    <p>Ẩm thực Việt Nam là tinh tuý và sự kết hợp những <br>
+                        nguyên liệu <span> không </span> quá cay, quá ngọt hay quá béo <br>
+                        Các nguyên liệu để chế biến món ăn cực kì<span> phong phú. </span></p>
+                    <a href="./am_thuc/index.html">Learn More</a>
+                </div>
+                <div>
+                    <img class="thumb_items_food" src="image/banhMi.png" alt="banhMi">
+                </div>
+            </div>
+            <!-- Alternative Img Food -->
+            <ul>
+                <li><img src="image/pho.png" alt="pho" onclick="imgSlider('image/pho.png') "></li>
+                <li><img src="image/banhMi.png" alt="banhMi" onclick="imgSlider('image/banhMi.png') "></li>
+                <li><img src="image/com.png" alt="com" onclick="imgSlider('image/com.png') "></li>
+                <li><img src="image/chaCuon.png" alt="chaCuon" onclick="imgSlider('image/chaCuon.png') "></li>
+            </ul>
+        </div>
+
+        <!-- Content View Main -->
+        <div class="main_content">
+            <!-- Content describe view  -->
+            <div class="content_item">
+                <div class="text_box">
+                    <h2>View in VietNam</h2>
+                    <p>Việt Nam <span>nổi tiếng</span> với vẻ đẹp. Từ những ngọn núi sương mù,<br>
+                        những cánh đồng lúa lấp lánh và những thác nước mê hoặc ở <span>miền Bắc,</span>
+                        <br> đến bãi cát trắng mịn và làn nước trong xanh như ngọc của những bãi biển<span>
+                            phía Nam,</span>
+                        <br> Việt Nam là một thiên đường tuyệt đẹp.
+                    </p>
+                    <a href="./dia_danh/index.html">Learn More</a>
+                </div>
+                <div>
+                    <img class="thumb_items_view" src="image/vn.png" alt="mapVN">
+                </div>
+            </div>
+            <!-- Alternative Img View -->
+            <ul>
+                <li><img src="image/langBac.png" alt="langBac.png" onclick="imgSlider2('image/langBac.png') "></li>
+                <li><img src="image/vn.png" alt="vn.png" onclick="imgSlider2('image/vn.png') "></li>
+                <li><img src="image/ruongBacThang.png" alt="ruongBacThang"
+                        onclick="imgSlider2('image/ruongBacThang.png') "></li>
+                <li><img src="image/thap1cot.png" alt="thap1cot.png" onclick="imgSlider2('image/thap1cot.png') ">
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <h4>InFo</h4>
+            <ul>
+                <li>2001215676</li>
+                <li>Nguyễn Văn Duy</li>
+                <li>12DHTH16</li>
+                <li>Chiều T6</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Office</h4>
+            <ul>
+                <li>duydadaga1@gmail.com</li>
+                <li>+84-0969733654</li>
+            </ul>
+        </div>
+        <!-- Icon footer -->
+        <div class="footer_contact">
+            <h4>Contact</h4>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100029013586011" alt="LogoFB" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/NNguyenDuy" alt="LogoGithub" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="./image/whatsApp.jpg" target="_blank" alt="LogoWhatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Javascrip: change img when click img -->
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.thumb_items_food').src = anything;
+        }
+        function imgSlider2(anything) {
+            document.querySelector('.thumb_items_view').src = anything;
+        }
+    </script>
+</body>
+
+</html>

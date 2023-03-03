@@ -1,0 +1,78 @@
+/* Set header bar */
+header {
+    position: fixed;
+    width: 100%;
+    height: 74px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: #fcfafa;
+    border-bottom: 1.5px solid #4d2c8b;
+    z-index: 100;
+}
+
+/* Set img logo header */
+.logo {
+    margin: 4px;
+    width: 70px;
+    border: 2.5px solid #abf1f9;
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.4s;
+    animation: logo_animation 3s linear 1s infinite alternate;
+}
+
+.logo:hover {
+    width: 67px;
+    opacity: 0.85;
+}
+
+@keyframes logo_animation {
+
+    0% {
+        border: 2.5px solid #a5b4f8;
+    }
+
+    50% {
+        border: 2.5px solid #b2faf4;
+    }
+
+    100% {
+        border: 2.5px solid #f6cee1;
+    }
+}
+
+/* Set navigation */
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    margin-left: 25px;
+    margin-right: 15px;
+    font-weight: 600;
+    padding: 2px 4px;
+    border-radius: 5px;
+    background-color: #a3f7d3;
+    box-shadow: 0 0 0 7px #ffffff;
+    transition: all 0.3s;
+}
+
+header ul li a:active {
+    padding: 10px 9px;
+    font-size: 17px;
+}
+
+header ul li a:hover {
+    position: relative;
+    color: rgb(11, 11, 11);
+    background-color: #7ffbc8;
+    font-weight: 500;
+    padding: 1.5px 3.5px;
+}

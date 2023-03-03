@@ -1,0 +1,26 @@
+main {
+    margin-top: 6.5%;
+    margin-left: 10%;
+    background-image: url('../image/thumbnail_food.png');
+    height: 700px;
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 4px;
+}
+
+header {
+    background-color: #070000;
+}
+
+main div h1 {
+    color: #fcf2f2;
+    font-size: 39px;
+    text-shadow: 7px 7px 10px #140136;
+    position: absolute;
+    top: 230px;
+    left: 65px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
