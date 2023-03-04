@@ -1,26 +1,131 @@
-main {
-    margin-top: 6.5%;
-    margin-left: 10%;
-    background-image: url('../image/thumbnail_food.png');
-    height: 700px;
-    background-size: 1100px;
-    background-repeat: no-repeat;
-    position: relative;
-    border-radius: 4px;
-}
-
+/* Header */
 header {
     background-color: #070000;
 }
 
-main div h1 {
+header h2 {
+    color: rgba(248, 251, 178, 0.805);
+    padding: 7px 15px;
+    border-bottom: 5px solid #dddab8;
+}
+
+/* Main */
+main {
+    margin: 6.5% 10%;
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 4px;
+    opacity: 0.88;
+    display: grid;
+}
+
+/*  */
+.title_thumbnail {
+    height: 650px;
+}
+
+.title_thumbnail h1 {
     color: #fcf2f2;
     font-size: 39px;
-    text-shadow: 7px 7px 10px #140136;
+    text-shadow: 7px 7px 10px #4205a9;
     position: absolute;
     top: 230px;
-    left: 65px;
+    left: 105px;
     font-weight: 900;
     letter-spacing: 1px;
     text-transform: uppercase;
+    text-indent: -50px;
+}
+
+.main_bt {
+    display: inline-block;
+    background-color: rgb(245, 206, 53);
+    position: relative;
+    padding: 14px 20px;
+    top: 370px;
+    font-weight: 600;
+    color: #0a012d;
+    border-radius: 4px;
+    left: 90px;
+    font-size: 16px;
+}
+
+.main_bar {
+    background-color: #e2dbdb;
+    position: relative;
+    padding: 14px 0px;
+}
+
+/*  */
+.main_view,
+.view_items a,
+.view_items img {
+    width: 300px;
+}
+
+.view_items img {
+    height: 180px;
+}
+
+.main_view {
+    padding: 15px 0px;
+}
+
+.view_items img {
+    margin-left: -3px;
+}
+
+.view_items {
+    gap: 93px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.view_items a {
+    border-left: 3px solid #4e3e3e;
+    border-right: 3px solid #4e3e3e;
+    border-bottom: 3px solid #4e3e3e;
+    text-decoration: none;
+    color: #070000;
+    transition: all 0.4s;
+}
+
+.view_items a:hover {
+    opacity: 0.88;
+    border-left: 3px solid #4ab3b7f0;
+    border-right: 3px solid #4ab3b7f0;
+    border-bottom: 3px solid #4ab3b7f0;
+}
+
+.view_items h2,
+.view_items p {
+    text-align: justify;
+    font-weight: 600;
+    padding: 7px;
+}
+
+
+.items_assess img {
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 150px;
+    box-shadow: 0 0 10px #5e4d4de6;
+}
+
+.items_assess {
+    position: absolute;
+    bottom: 1%;
+    right: 12%;
+    width: 400px;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #59c7cb;
+}
+
+
+.items_assess:hover {
+    box-shadow: 0px 0px 5px #3c5052;
+    color: #1e0c4d;
 }
