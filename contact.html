@@ -12,7 +12,6 @@
     <!-- add style css -->
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/css_contact.css">
     <title>NguyenDuy✔</title>
@@ -38,7 +37,7 @@
         <h1>Inbox For Me</h1>
         <p>If you have any questions or comments, please post them on our. Thanks!:
         </p>
-        <form action="http://tranvanhung.fitstu.net/hufi/thiet-ke-web/form.php?" method="get">
+        <form target="_blank" action="http://tranvanhung.fitstu.net/hufi/thiet-ke-web/form.php?" method="get">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -48,7 +47,7 @@
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <input type="submit" value="Send Inbox">
+            <input id="submisent" type="submit" value="Send Inbox">
         </form>
     </main>
 
@@ -93,6 +92,11 @@
         </div>
     </footer>
 
+    <script>
+        document.getElementById("submisent").onclick = function () {
+            document.getElementById("submisent").value = "Sent Inbox ✔️✔️✔️";
+        }
+    </script>
 </body>
 
 </html>
